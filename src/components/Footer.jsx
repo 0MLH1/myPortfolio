@@ -6,8 +6,8 @@
     const Footer = () => {
       const currentYear = new Date().getFullYear();
       const socialLinks = [
-        { icon: <Github className="h-5 w-5" />, href: 'https://github.com/lahmam1',_label: 'GitHub Profile of Mohamed Lahmam' },
-        { icon: <Linkedin className="h-5 w-5" />, href: 'https://www.linkedin.com/in/mohamed-lahmam-911708242/', label: 'LinkedIn Profile of Mohamed Lahmam' },
+        { icon: <Github className="h-5 w-5" />, href: 'https://github.com/0MLH1',_label: 'GitHub Profile of Mohamed Lahmam' },
+        { icon: <Linkedin className="h-5 w-5" />, href: 'https://www.linkedin.com/in/mohamed-lahmam-a4655b27a/', label: 'LinkedIn Profile of Mohamed Lahmam' },
         { icon: <Mail className="h-5 w-5" />, href: 'mailto:lh186261@gmail.com', label: 'Email Mohamed Lahmam' },
       ];
 
