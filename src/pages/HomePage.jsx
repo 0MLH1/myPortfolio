@@ -9,8 +9,8 @@
     import { Label } from '@/components/ui/label';
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
-    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPhp } from 'react-icons/fa';
-    import { SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
+    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp } from 'react-icons/fa';
+    import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
     import { FaDatabase } from 'react-icons/fa';
 
@@ -277,10 +277,8 @@
       ],
       backend: [
         { name: "Laravel", icon: <FaLaravel className="w-10 h-10 text-red-500" />, level: "Avancé" },
-        { name: "Node.js", icon: <FaNodeJs className="w-10 h-10 text-green-500" />, level: "Intermédiaire" },
-        { name: "Express.js", icon: <span className="w-10 h-10 text-black font-bold text-xl">Ex</span>, level: "Intermédiaire" },
+        { name: "Node.js:Express", icon: <FaNodeJs className="w-10 h-10 text-green-500" />, level: "Intermédiaire" },
         { name: "JEE / Java EE", icon: <FaJava className="w-10 h-10 text-red-600" />, level: "Basique" },
-
       ],
       databases: [
         { name: "MySQL", icon: <SiMysql className="w-10 h-10 text-blue-600" />, level: "Avancé" },
@@ -293,7 +291,9 @@
         { name: "Java", icon: <FaJava className="w-10 h-10 text-red-600" />, level: "Avancé" },
         { name: "C", icon: <SiC className="w-10 h-10 text-blue-700" />, level: "Intermédiaire" },
         { name: "C#", icon: <SiCsharp className="w-10 h-10 text-purple-600" />, level: "Intermédiaire" },
+        { name: "C++", icon: <SiCplusplus className="w-10 h-10 text-blue-500" />, level: "Intermédiaire" },
         { name: "PHP", icon: <FaPhp className="w-10 h-10 text-indigo-400" />, level: "Avancé" },
+        { name: "Python", icon: <FaPython className="w-10 h-10 text-yellow-500" />, level: "Avancé" },
         { name: "Bash Scripting", icon: <SiGnubash className="w-10 h-10 text-green-600" />, level: "Intermédiaire" },
       ],
       softSkills: [
