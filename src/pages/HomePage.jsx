@@ -10,7 +10,7 @@
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
     import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPhp } from 'react-icons/fa';
-    import { SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
+    import { SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
     import { FaDatabase } from 'react-icons/fa';
 
@@ -292,6 +292,7 @@
         { name: "C", icon: <SiC className="w-10 h-10 text-blue-700" />, level: "Intermédiaire" },
         { name: "C#", icon: <SiCsharp className="w-10 h-10 text-purple-600" />, level: "Intermédiaire" },
         { name: "PHP", icon: <FaPhp className="w-10 h-10 text-indigo-400" />, level: "Avancé" },
+        { name: "Bash Scripting", icon: <SiGnubash className="w-10 h-10 text-green-600" />, level: "Intermédiaire" },
       ],
       softSkills: [
         { name: "Autonome", icon: <Star className="w-6 h-6 text-yellow-400" /> },
