@@ -55,7 +55,7 @@
             <div className="flex items-center justify-between h-16">
               <Link to="/" onClick={() => scrollToSection('#hero')} className="flex items-center space-x-2 text-2xl font-bold text-primary">
                 <Code className="h-7 w-7" />
-                <span>Mohamed L.</span>
+                <span>MLH</span>
               </Link>
               <div className="hidden md:flex items-center space-x-4">
                 {navItems.map((item) => (
