@@ -277,9 +277,9 @@
       ],
       backend: [
         { name: "Laravel", icon: <FaLaravel className="w-10 h-10 text-red-500" />, level: "Avancé" },
-        { name: "Node.js / Express", icon: <FaNodeJs className="w-10 h-10 text-green-500" />, level: "Intermédiaire" },
-        { name: "JEE / Java EE", icon: <FaJava className="w-10 h-10 text-red-600" />, level: "Basique" },
+        { name: "Node.js", icon: <FaNodeJs className="w-10 h-10 text-green-500" />, level: "Intermédiaire" },
         { name: "Express.js", icon: <span className="w-10 h-10 text-black font-bold text-xl">Ex</span>, level: "Intermédiaire" },
+        { name: "JEE / Java EE", icon: <FaJava className="w-10 h-10 text-red-600" />, level: "Basique" },
 
       ],
       databases: [
