@@ -9,8 +9,8 @@
     import { Label } from '@/components/ui/label';
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
-    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp } from 'react-icons/fa';
-    import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
+    import { FaBootstrap, FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp } from 'react-icons/fa';
+    import { SiTailwindcss, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
     import { FaDatabase } from 'react-icons/fa';
 
@@ -202,7 +202,7 @@
         description: "Automatisation des promotions, génération de PDF, et gestion des processus RH de l'université. Solution robuste pour optimiser les tâches administratives.",
         stack: ["Laravel", "React.js", "JS", "Bootstrap", "MySQL"],
         features: ["Automatisation de la génération de documents", "Gestion des promotions"],
-        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <FaReact key="react" className="text-blue-400"/>,, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <SiMysql key="mysql" className="text-blue-500"/>],
+        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <SiMysql key="mysql" className="text-blue-500"/>],
         imagePlaceholder: "Interface of an employee management platform"
       },
     ];
