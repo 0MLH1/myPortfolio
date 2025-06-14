@@ -10,7 +10,7 @@
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
     import { FaBootstrap, FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp } from 'react-icons/fa';
-    import { SiTailwindcss, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
+    import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
     import { FaDatabase } from 'react-icons/fa';
 
@@ -172,7 +172,7 @@
             "Intégration d’API tierces ",
             "Participation aux revues de code et flux Git"
           ],
-          icons: [<FaLaravel key="laravel" className="text-red-500"/>,<FaReact key="react" className="text-blue-400"/>,<FaNodeJs key="node" className="text-green-600"/>,<SiMongodb key="mongo" className="text-green-500"/>,<SiTailwindcss key="tailwind" className="text-cyan-500"/>,<FaBootstrap key="bootstrap" className="text-purple-500"/>,<DiJavascript1 key="js" className="text-yellow-400"/>],
+          icons: [<FaLaravel key="laravel" className="text-red-500"/>,<FaReact key="react" className="text-blue-400"/>,<FaNodeJs key="node" className="text-green-600"/>,<SiMongodb key="mongo" className="text-green-500"/>,<FaBootstrap key="bootstrap" className="text-purple-500"/>,<DiJavascript1 key="js" className="text-yellow-400"/>],
           imagePlaceholder: "Screenshot of Skoolution internal tool interface"
         },
       {
