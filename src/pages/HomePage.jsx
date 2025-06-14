@@ -167,11 +167,7 @@
           date: "Décembre 2024 – Aujourd’hui",
           description: "Développement de fonctionnalités full-stack pour les outils internes de Skoolution en utilisant Laravel, React.js, Node.js, Express.js et MongoDB. Participation active aux workflows agiles avec focus sur la performance et l’accessibilité.",
           stack: ["Laravel", "React.js", "Node.js", "MongoDB", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
-          features: [
-            "Composants UI réactifs avec TailwindCSS",
-            "Intégration d’API tierces ",
-            "Participation aux revues de code et flux Git"
-          ],
+          features: ["Composants UI réactifs avec TailwindCSS","Intégration d’API tierces ", "Participation aux revues de code et flux Git"],
           icons: [<FaLaravel key="laravel" className="text-red-500"/>,<FaReact key="react" className="text-blue-400"/>,<FaNodeJs key="node" className="text-green-600"/>,<SiMongodb key="mongo" className="text-green-500"/>,<FaBootstrap key="bootstrap" className="text-purple-500"/>,<DiJavascript1 key="js" className="text-yellow-400"/>],
           imagePlaceholder: "Screenshot of Skoolution internal tool interface"
         },
