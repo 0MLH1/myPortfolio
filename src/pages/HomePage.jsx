@@ -161,8 +161,22 @@
     };
     
     const projects = [
+        {
+          title: "Skoolution",
+          role: "Full-Stack Laravel / JavaScript Engineer Intern",
+          date: "Décembre 2024 – Aujourd’hui",
+          description: "Développement de fonctionnalités full-stack pour les outils internes de Skoolution en utilisant Laravel, React.js, Node.js, Express.js et MongoDB. Participation active aux workflows agiles avec focus sur la performance et l’accessibilité.",
+          stack: ["Laravel", "React.js", "Node.js", "MongoDB", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
+          features: [
+            "Composants UI réactifs avec TailwindCSS",
+            "Intégration d’API tierces ",
+            "Participation aux revues de code et flux Git"
+          ],
+          icons: [<FaLaravel key="laravel" className="text-red-500"/>,<FaReact key="react" className="text-blue-400"/>,<FaNodeJs key="node" className="text-green-600"/>,<SiMongodb key="mongo" className="text-green-500"/>,<SiTailwindcss key="tailwind" className="text-cyan-500"/>,<FaBootstrap key="bootstrap" className="text-purple-500"/>,<DiJavascript1 key="js" className="text-yellow-400"/>],
+          imagePlaceholder: "Screenshot of Skoolution internal tool interface"
+        },
       {
-        title: "Golden Success Tutoring Website",
+        title: "Golden Success",
         role: "Full-Stack Developer (Freelance)",
         date: "Juin–Juillet 2024",
         description: "Application web dynamique pour la gestion de cours avec tableau de bord administrateur. Hébergée avec un accent sur la performance et l'accessibilité.",
@@ -172,7 +186,7 @@
         imagePlaceholder: "Screenshot of Golden Success Tutoring Website dashboard"
       },
       {
-        title: "Site E-Commerce",
+        title: "personnelle: Site E-Commerce",
         role: "Développeur Full-Stack",
         date: "Projet Personnel",
         description: "Plateforme e-commerce complète avec fonctionnalités de panier, authentification, et processus de paiement. Intégration Stripe et gestion d'état avec Redux.",
@@ -182,7 +196,7 @@
         imagePlaceholder: "Mockup of an E-commerce website interface showing products"
       },
       {
-        title: "Plateforme de Gestion des Employés - Université Cadi Ayyad",
+        title: "Académiques: Plateforme de Gestion des Employés - Université Cadi Ayyad",
         role: "Développeur Full-Stack",
         date: "Projet Universitaire",
         description: "Automatisation des promotions, génération de PDF, et gestion des processus RH de l'université. Solution robuste pour optimiser les tâches administratives.",
@@ -255,7 +269,7 @@
     
     const ProjectsSection = () => (
       <SectionWrapper id="projects">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">Mes <span className="text-primary">Projets</span></h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">Mes <span className="text-primary">Expériences & Projets</span></h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Voici quelques projets sur lesquels j'ai travaillé, démontrant mes compétences en développement full-stack et ma passion pour la création de solutions web innovantes.
         </p>
