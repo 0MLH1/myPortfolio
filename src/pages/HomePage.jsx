@@ -163,7 +163,7 @@
     const projects = [
         {
           title: "Skoolution",
-          role: "Full-Stack Laravel / JavaScript Engineer Intern",
+          role: "Full-Stack Laravel / JavaScript Engineer Intern - hybride",
           date: "Décembre 2024 – Aujourd’hui",
           description: "Développement de fonctionnalités full-stack pour les outils internes de Skoolution en utilisant Laravel, React.js, Node.js, Express.js et MongoDB. Participation active aux workflows agiles avec focus sur la performance et l’accessibilité.",
           stack: ["Laravel", "React.js", "Node.js", "MongoDB", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
@@ -173,7 +173,7 @@
         },
       {
         title: "Golden Success",
-        role: "Full-Stack Developer (Freelance)",
+        role: "Full-Stack Developer (Freelance) - à distance",
         date: "Juin–Juillet 2024",
         description: "Application web dynamique pour la gestion de cours avec tableau de bord administrateur. Hébergée avec un accent sur la performance et l'accessibilité.",
         stack: ["Laravel", "MySQL", "Bootstrap", "JS"],
@@ -265,9 +265,9 @@
     
     const ProjectsSection = () => (
       <SectionWrapper id="projects">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">Mes <span className="text-primary">Expériences & Projets</span></h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">Mes <span className="text-primary">xpériences Professionnelles & Projets Académiques </span></h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Voici quelques projets sur lesquels j'ai travaillé, démontrant mes compétences en développement full-stack et ma passion pour la création de solutions web innovantes.
+          Mes expériences professionnelles constituent le cœur de mon parcours en développement full-stack. Elles sont complétées par des projets personnels qui illustrent ma capacité à transformer des idées en solutions web concrètes, performantes et innovantes.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
