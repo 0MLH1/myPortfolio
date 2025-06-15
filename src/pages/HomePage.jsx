@@ -142,7 +142,7 @@
                   <img  
                     className="relative w-full h-full rounded-full object-cover shadow-2xl border-4 border-background"
                     alt="Mohamed Lahmam profile picture placeholder"
-                   src="https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" />
+                   src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" />
                 </div>
               </motion.div>
             </div>
