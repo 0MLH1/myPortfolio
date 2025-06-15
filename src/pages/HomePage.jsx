@@ -255,7 +255,7 @@
     
     const ProjectsSection = () => (
       <SectionWrapper id="projects">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">Mes <span className="text-primary">Expériences Professionnelles & Projets Académiques </span></h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">Mes <span className="text-primary">Expériences Professionnelles & Projets </span></h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Mes expériences professionnelles constituent le cœur de mon parcours en développement full-stack. Elles sont complétées par des projets personnels qui illustrent ma capacité à transformer des idées en solutions web concrètes, performantes et innovantes.
         </p>
