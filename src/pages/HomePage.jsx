@@ -182,17 +182,7 @@
         imagePlaceholder: "Screenshot of Golden Success Tutoring Website dashboard"
       },
       {
-        title: "personnelle: Site E-Commerce",
-        role: "Développeur Full-Stack",
-        date: "Projet Personnel",
-        description: "Plateforme e-commerce complète avec fonctionnalités de panier, authentification, et processus de paiement. Intégration Stripe et gestion d'état avec Redux.",
-        stack: ["Laravel", "ReactJS", "Redux", "Stripe"],
-        features: ["Panier d'achat", "Authentification", "Paiement en ligne"],
-        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <SiMysql key="mysql" className="text-blue-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <FaReact key="react" className="text-blue-400"/>, <SiRedux key="redux" className="text-purple-500"/>],
-        imagePlaceholder: "Mockup of an E-commerce website interface showing products"
-      },
-      {
-        title: "Académiques: Plateforme de Gestion des Employés - Université Cadi Ayyad",
+        title: "Université Cadi Ayyad",
         role: "Développeur Full-Stack",
         date: "Projet Universitaire",
         description: "Automatisation des promotions, génération de PDF, et gestion des processus RH de l'université. Solution robuste pour optimiser les tâches administratives.",
