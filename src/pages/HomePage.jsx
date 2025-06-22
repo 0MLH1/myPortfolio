@@ -9,10 +9,11 @@
     import { Label } from '@/components/ui/label';
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
-    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp } from 'react-icons/fa';
+    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase  } from 'react-icons/fa';
     import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
-    import { FaDatabase } from 'react-icons/fa';
+    import { MdLaptopMac } from "react-icons/md";  // <- changed here
+
 
 
     const AnimatedTextLoop = () => {
@@ -71,6 +72,113 @@
         </motion.section>
       );
     };
+
+    // Inline laptop SVG — subtle and modern
+const LaptopSVG = (props) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={1.5}
+    className="w-32 h-32 opacity-10 absolute bottom-6 right-6 rotate-12"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M3 16.5h18m-6 3h-6a2.25 2.25 0 01-2.25-2.25v-9A2.25 2.25 0 019 6h6a2.25 2.25 0 012.25 2.25v9A2.25 2.25 0 0115 19.5z"
+    />
+  </svg>
+);
+
+const containerVariants = {
+  hidden: { opacity: 0, scale: 0.95, y: 20 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
+const iconHoverEffect = {
+  scale: 1.3,
+  rotate: 20,
+  transition: { type: "spring", stiffness: 250, damping: 15 },
+};
+
+const AdvancedFullStackSpecialization = () => {
+  return (
+    <motion.div
+      className="relative max-w-md mx-auto bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 rounded-3xl shadow-2xl p-10 text-white overflow-hidden"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+    >
+      {/* Laptop SVG decoration */}
+      <LaptopSVG />
+
+      {/* Title */}
+      <motion.h2
+        className="text-center text-4xl font-extrabold mb-6 select-none"
+        initial={{ y: -30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        Spécialisation Full-Stack
+      </motion.h2>
+
+      {/* Description */}
+      <motion.p
+        className="text-center text-gray-300 mb-10 px-4 leading-relaxed"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 1 }}
+      >
+        Maîtrise complète du développement Full-Stack avec{" "}
+        <span className="font-semibold text-red-500">Laravel</span>,{" "}
+        <span className="font-semibold text-blue-400">PHP</span> et{" "}
+        <span className="font-semibold text-cyan-400">React</span>. Performance, qualité
+        et architecture moderne.
+      </motion.p>
+
+      {/* Icons row */}
+      <motion.div
+        className="flex justify-center gap-16"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
+      >
+        <motion.div
+          whileHover={iconHoverEffect}
+          className="cursor-pointer select-none"
+          title="Laravel"
+        >
+          <FaLaravel className="text-8xl text-red-600 drop-shadow-lg" />
+        </motion.div>
+
+
+        <motion.div
+          whileHover={iconHoverEffect}
+          className="cursor-pointer select-none"
+          title="React"
+        >
+          <FaReact className="text-8xl text-cyan-400 drop-shadow-lg" />
+        </motion.div>
+      </motion.div>
+
+      {/* Animated underline */}
+      <motion.div
+        className="h-1 bg-gradient-to-r from-red-500 via-pink-500 to-purple-600 rounded-full mt-12 mx-auto w-0"
+        animate={{ width: "70%" }}
+        transition={{ duration: 1.6, ease: "easeInOut" }}
+      />
+    </motion.div>
+  );
+};
+
 
     const HeroSection = () => {
       return (
@@ -161,109 +269,99 @@
     };
     
     const projects = [
-        {
-          title: "Skoolution",
-          role: "Full-Stack Laravel / JavaScript Engineer Intern - hybride",
-          date: "Décembre 2024 – Aujourd’hui",
-          description: "Développement de fonctionnalités full-stack pour les outils internes de Skoolution en utilisant Laravel, React.js, Node.js, Express.js et MongoDB. Participation active aux workflows agiles avec focus sur la performance et l’accessibilité.",
-          stack: ["Laravel", "React.js", "Node.js", "MongoDB", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
-          features: ["Composants UI réactifs avec TailwindCSS","Intégration d’API tierces ", "Participation aux revues de code et flux Git"],
-          icons: [<FaLaravel key="laravel" className="text-red-500"/>,<FaReact key="react" className="text-blue-400"/>,<FaNodeJs key="node" className="text-green-600"/>,<SiMongodb key="mongo" className="text-green-500"/>,<FaBootstrap key="bootstrap" className="text-purple-500"/>],
-          imagePlaceholder: "Screenshot of Skoolution internal tool interface"
-        },
       {
+        logo: "https://media.licdn.com/dms/image/v2/D4E3DAQEcImVStm3dMg/image-scale_191_1128/image-scale_191_1128/0/1725555837550/skoolution_cover?e=2147483647&v=beta&t=_Rz1IOPo9baZOWf-G5Ux9TDTeR3i2AjqQJIcNjG4_BA",
+        title: "Skoolution",
+        role: "Full-Stack Laravel / JavaScript Engineer Intern - hybride",
+        date: "Décembre 2024 – Aujourd’hui",
+        description: "Développement de fonctionnalités full-stack pour les outils internes...",
+        stack: ["Laravel", "React.js", "Node.js", "MongoDB", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
+        features: ["Composants UI réactifs avec TailwindCSS", "Intégration d’API tierces", "Participation aux revues de code et flux Git"],
+        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaNodeJs key="node" className="text-green-600"/>, <SiMongodb key="mongo" className="text-green-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>],
+      },
+      {
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x_ypAajpUWnr2nQW7hlZa_MfF8pMCg7vRA&s",
         title: "Golden Success",
         role: "Full-Stack Developer (Freelance) - à distance",
         date: "Juin–Juillet 2024",
-        description: "Application web dynamique pour la gestion de cours avec tableau de bord administrateur. Hébergée avec un accent sur la performance et l'accessibilité.",
+        description: "Application web dynamique pour la gestion de cours avec tableau de bord administrateur...",
         stack: ["Laravel", "MySQL", "Bootstrap", "JS"],
         features: ["CMS basé sur une base de données", "Tableau de bord", "Liste des offres/actualités"],
         icons: [<FaLaravel key="laravel" className="text-red-500"/>, <SiMysql key="mysql" className="text-blue-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <DiJavascript1 key="js" className="text-yellow-400"/>],
-        imagePlaceholder: "Screenshot of Golden Success Tutoring Website dashboard"
-      },
-      {
-        title: "Université Cadi Ayyad",
-        role: "Développeur Full-Stack",
-        date: "Projet Universitaire",
-        description: "Automatisation des promotions, génération de PDF, et gestion des processus RH de l'université. Solution robuste pour optimiser les tâches administratives.",
-        stack: ["Laravel", "React.js", "JS", "Bootstrap", "MySQL"],
-        features: ["Automatisation de la génération de documents", "Gestion des promotions"],
-        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <SiMysql key="mysql" className="text-blue-500"/>],
-        imagePlaceholder: "Interface of an employee management platform"
       },
     ];
 
+
+
     const ProjectCard = ({ project, index }) => {
-      const controls = useAnimation();
-      const ref = useRef(null);
-      const isInView = useInView(ref, { once: true, amount: 0.3 });
-    
-      useEffect(() => {
-        if (isInView) {
-          controls.start("visible");
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
+
+  useEffect(() => {
+    if (isInView) controls.start("visible");
+  }, [isInView, controls]);
+
+  return (
+    <motion.div
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: 50, scale: 0.95 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: { duration: 0.5, delay: index * 0.1, ease: "easeOut" }
         }
-      }, [isInView, controls]);
-    
-      return (
-        <motion.div
-          ref={ref}
-          variants={{
-            hidden: { opacity: 0, y: 50, scale: 0.95 },
-            visible: { 
-              opacity: 1, 
-              y: 0, 
-              scale: 1,
-              transition: { duration: 0.5, delay: index * 0.1, ease: "easeOut" } 
-            }
-          }}
-          initial="hidden"
-          animate={controls}
-          className="h-full"
-        >
-          <Card className="h-full flex flex-col overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-out shadow-xl hover:shadow-2xl rounded-2xl">
-           
-              <div className="absolute bottom-4 right-4 text-xs text-white bg-black/50 px-2 py-1 rounded">
-                {project.date}
-              </div>
-            <CardHeader>
-              <CardTitle className="text-xl lg:text-2xl">{project.title}</CardTitle>
-              <CardDescription className="text-sm">{project.role}</CardDescription>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="text-sm text-muted-foreground mb-3">{project.description}</p>
-              <h4 className="font-semibold text-sm mb-1">Fonctionnalités clés:</h4>
-              <ul className="list-disc list-inside text-xs text-muted-foreground space-y-0.5 mb-3">
-                {project.features.map((feature, i) => <li key={i}>{feature}</li>)}
-              </ul>
-            </CardContent>
-            <CardFooter className="flex-wrap gap-2 pt-4 border-t">
-              {project.icons.map((icon, i) => (
-                <motion.div 
-                  key={i} 
-                  className="text-2xl text-muted-foreground"
-                  whileHover={{ y: -3, color: 'hsl(var(--primary))' }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
-                  {icon}
-                </motion.div>
-              ))}
-            </CardFooter>
-          </Card>
-        </motion.div>
-      );
-    };
+      }}
+      initial="hidden"
+      animate={controls}
+    >
+      <Card className="flex flex-row gap-6 items-start p-6 overflow-hidden shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105 rounded-2xl h-full">
+        <img src={project.logo} alt="Logo" className="w-20 h-20 object-contain rounded-md shadow-md border" />
+        <div className="flex flex-col flex-grow">
+          <div className="flex justify-between items-start mb-2">
+            <div>
+              <h3 className="text-xl font-bold">{project.title}</h3>
+              <p className="text-sm text-muted-foreground">{project.role}</p>
+            </div>
+            <span className="text-xs text-white bg-black/50 px-2 py-1 rounded">{project.date}</span>
+          </div>
+          <p className="text-sm text-muted-foreground mb-2">{project.description}</p>
+          <ul className="list-disc list-inside text-xs text-muted-foreground space-y-1 mb-3">
+            {project.features.map((feature, i) => <li key={i}>{feature}</li>)}
+          </ul>
+          <div className="flex flex-wrap gap-2">
+            {project.icons.map((icon, i) => (
+              <motion.div
+                key={i}
+                className="text-xl text-muted-foreground"
+                whileHover={{ y: -3, color: 'hsl(var(--primary))' }}
+                transition={{ type: 'spring', stiffness: 300 }}
+              >
+                {icon}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </Card>
+    </motion.div>
+  );
+};
+
     
     const ProjectsSection = () => (
       <SectionWrapper id="projects">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">Mes <span className="text-primary">Expériences Professionnelles & Projets </span></h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">Mes <span className="text-primary">Expériences Professionnelles  </span></h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Mes expériences professionnelles constituent le cœur de mon parcours en développement full-stack. Elles sont complétées par des projets personnels qui illustrent ma capacité à transformer des idées en solutions web concrètes, performantes et innovantes.
+          Mes expériences professionnelles constituent le cœur de mon parcours en développement full-stack.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
+
       </SectionWrapper>
     );
 
@@ -378,14 +476,26 @@
       {
         date: "2023 – Aujourd'hui",
         title: "Cycle d’Ingénieur – FST Marrakech",
-        description: "Ingénierie des Réseaux et Systèmes Informatiques. Acquisition de compétences avancées en développement web ,architecture réseau,et développement système.",
-        icon: <School className="w-6 h-6 text-primary" />
+        description: "Fillières : Ingénierie des Réseaux et Systèmes Informatiques (IRSI) -> Acquisition de compétences avancées en développement web, architecture réseau, et développement système.",
+        icon: (
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02M3Opt5mWYhHoiAGBTcLzj3BNnRC85RJiA&s"
+            alt="FSTG Logo"
+            className="w-32 h-32 object-contain"
+          />
+        )
       },
       {
         date: "2021 – 2023",
         title: "DEUST – FST Mohammedia",
-        description: "Mathématiques, Informatique, Physique (MIP). Bases solides en sciences fondamentales et algorithmique.",
-        icon: <FileSpreadsheet className="w-6 h-6 text-primary" />
+        description: " Fillières : Mathématiques, Informatique, Physique (MIP) -> Bases solides en sciences fondamentales et algorithmique.",
+        icon: (
+          <img
+            src="https://images.seeklogo.com/logo-png/53/1/faculte-des-sciences-et-techniques-de-mohammedia-logo-png_seeklogo-531871.png"
+            alt="FSTM Logo"
+            className="w-32 h-32 object-contain"
+          />
+        )
       },
       {
         date: "2018 – 2021",
@@ -394,6 +504,7 @@
         icon: <PenTool className="w-6 h-6 text-primary" />
       },
     ];
+
 
     const EducationSection = () => {
       const controls = useAnimation();
@@ -434,9 +545,12 @@
                 }}
                 className={`mb-12 flex items-start ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}
               >
-                <div className={`flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-6 md:mr-0 ${index % 2 === 0 ? 'md:ml-6' : 'md:mr-6'} z-10 ring-4 ring-background`}>
-                  {item.icon}
+                <div className={`flex-shrink-0 mr-6 md:mr-0 ${index % 2 === 0 ? 'md:ml-6' : 'md:mr-6'} z-10`}>
+                  <div className="w-32 h-32">
+                    {item.icon}
+                  </div>
                 </div>
+
                 <div className={`w-full md:w-[calc(50%-3rem)] ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                   <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardHeader>
@@ -615,6 +729,7 @@
       return (
         <>
           <HeroSection />
+          <AdvancedFullStackSpecialization />
           <ProjectsSection />
           <SkillsSection />
           <EducationSection />
