@@ -272,8 +272,10 @@ const AdvancedFullStackSpecialization = () => {
       {
         logo: "https://media.licdn.com/dms/image/v2/D4E3DAQEcImVStm3dMg/image-scale_191_1128/image-scale_191_1128/0/1725555837550/skoolution_cover?e=2147483647&v=beta&t=_Rz1IOPo9baZOWf-G5Ux9TDTeR3i2AjqQJIcNjG4_BA",
         title: "Skoolution",
-        role: "Full-Stack Laravel / JavaScript Engineer Intern - hybride",
+        role: "Full-Stack Laravel / JavaScript Engineer Intern",
         date: "Décembre 2024 – Aujourd’hui",
+        location: "Agadir, Maroc",
+        type: "hybride",
         description: "Développement de fonctionnalités full-stack pour les outils internes...",
         stack: ["Laravel", "React.js", "Node.js", "MongoDB", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
         features: ["Composants UI réactifs avec TailwindCSS", "Intégration d’API tierces", "Participation aux revues de code et flux Git"],
@@ -282,8 +284,10 @@ const AdvancedFullStackSpecialization = () => {
       {
         logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x_ypAajpUWnr2nQW7hlZa_MfF8pMCg7vRA&s",
         title: "Golden Success",
-        role: "Full-Stack Developer (Freelance) - à distance",
+        role: "Full-Stack Developer (Freelance)",
         date: "Juin–Juillet 2024",
+        location: "El Jaddida, Maroc",
+        type: "à distance",
         description: "Application web dynamique pour la gestion de cours avec tableau de bord administrateur...",
         stack: ["Laravel", "MySQL", "Bootstrap", "JS"],
         features: ["CMS basé sur une base de données", "Tableau de bord", "Liste des offres/actualités"],
@@ -324,6 +328,7 @@ const AdvancedFullStackSpecialization = () => {
             <div>
               <h3 className="text-xl font-bold">{project.title}</h3>
               <p className="text-sm text-muted-foreground">{project.role}</p>
+              <p className="text-xs text-muted-foreground mt-1">{project.location} - <span className="font-semibold">{project.type}</span></p>
             </div>
             <span className="text-xs text-white bg-black/50 px-2 py-1 rounded">{project.date}</span>
           </div>
