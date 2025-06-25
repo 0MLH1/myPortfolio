@@ -17,7 +17,7 @@
 
 
     const AnimatedTextLoop = () => {
-      const texts = ["Full-Stack Developer", "Laravel Enthusiast", "React.js Builder", "Future Engineer"];
+      const texts = ["Full-Stack Developer", "Laravel Master", "React.js Builder", "Future Engineer"];
       const [index, setIndex] = useState(0);
 
       useEffect(() => {
@@ -273,7 +273,7 @@ const AdvancedFullStackSpecialization = () => {
         logo: "https://media.licdn.com/dms/image/v2/D4E3DAQEcImVStm3dMg/image-scale_191_1128/image-scale_191_1128/0/1725555837550/skoolution_cover?e=2147483647&v=beta&t=_Rz1IOPo9baZOWf-G5Ux9TDTeR3i2AjqQJIcNjG4_BA",
         title: "Skoolution",
         role: "Full-Stack Laravel / JavaScript Engineer Intern",
-        date: "Mai 2024 - Aujourd’hui",
+        date: "Mai 2025 - Aujourd’hui",
         location: "Agadir, Maroc",
         type: "hybride",
         description: "Développement de fonctionnalités full-stack pour les outils internes...",
