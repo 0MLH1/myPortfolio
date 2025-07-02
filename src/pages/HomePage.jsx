@@ -9,10 +9,9 @@
     import { Label } from '@/components/ui/label';
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
-    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase  } from 'react-icons/fa';
-    import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux} from 'react-icons/si';
+    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase,FaJs  } from 'react-icons/fa';
+    import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiJavascript} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
-    import { MdLaptopMac } from "react-icons/md";  // <- changed here
 
 
 
@@ -270,28 +269,40 @@ const AdvancedFullStackSpecialization = () => {
     
     const projects = [
       {
+        logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFOePLb6guZaQ/company-logo_200_200/company-logo_200_200/0/1712274871925/innovqube_logo?e=2147483647&v=beta&t=LT9HckKmThf3NON5B9EypK6u0PH1sn_UySBRgR7-GVE",
+        title: "InnovQube",
+        role: "Backend Engineer Intern (Laravel)",
+        date: "07/2025 - 09/2025",
+        location: "Paris, France",
+        type: "à distance",
+        description: "Développement de fonctionnalités backend en laravel pour les clients d'InnovQube",
+        stack: ["Laravel, Livewire, Filament"],
+        features: ["Réservation en ligne de vols, hôtels et circuits","Gestion des forfaits et offres promotionnelles","Paiement sécurisé intégré","Espace client personnalisé avec historique des réservations","Calendrier des disponibilités en temps réel"],
+        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <SiMysql key="mysql" className="text-blue-500"/>, ],
+      },
+      {
         logo: "https://media.licdn.com/dms/image/v2/D4E3DAQEcImVStm3dMg/image-scale_191_1128/image-scale_191_1128/0/1725555837550/skoolution_cover?e=2147483647&v=beta&t=_Rz1IOPo9baZOWf-G5Ux9TDTeR3i2AjqQJIcNjG4_BA",
         title: "Skoolution",
-        role: "Full-Stack Laravel / JavaScript Engineer Intern",
-        date: "Mai 2025 - Aujourd’hui",
+        role: "Full-Stack Engineer Intern (MERN Stack)",
+        date: "04/2025 - 07/2025",
         location: "Agadir, Maroc",
         type: "hybride",
-        description: "Développement de fonctionnalités full-stack pour les outils internes...",
-        stack: ["Laravel", "React.js", "Node.js", "MongoDB", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
+        description: "Développement de fonctionnalités full-stack pour les outils internes de Skoolution",
+        stack: ["React.js", "Node.js", "MongoDB","Express.js","TypeScript", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
         features: ["Composants UI réactifs avec TailwindCSS", "Intégration d’API tierces", "Participation aux revues de code et flux Git"],
-        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaNodeJs key="node" className="text-green-600"/>, <SiMongodb key="mongo" className="text-green-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>],
+        icons: [<SiTypescript key="typescript" className="text-blue-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaNodeJs key="node" className="text-green-600"/>, <SiMongodb key="mongo" className="text-green-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>],
       },
       {
         logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x_ypAajpUWnr2nQW7hlZa_MfF8pMCg7vRA&s",
         title: "Golden Success",
         role: "Full-Stack Developer (Freelance)",
-        date: "Juin - Juillet 2024",
+        date: "06/2024 - 07/2024",
         location: "El Jaddida, Maroc",
         type: "à distance",
         description: "Application web dynamique pour la gestion de cours avec tableau de bord administrateur...",
         stack: ["Laravel", "MySQL", "Bootstrap", "JS"],
         features: ["CMS basé sur une base de données", "Tableau de bord", "Liste des offres/actualités"],
-        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <SiMysql key="mysql" className="text-blue-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <DiJavascript1 key="js" className="text-yellow-400"/>],
+        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <SiMysql key="mysql" className="text-blue-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <FaJs key="js" className="text-yellow-400"/>],
       },
     ];
 
@@ -374,9 +385,9 @@ const AdvancedFullStackSpecialization = () => {
       frontend: [
         { name: "HTML5", icon: <DiHtml5 className="w-10 h-10 text-orange-500" />, level: "Avancé" },
         { name: "CSS3", icon: <DiCss3 className="w-10 h-10 text-blue-500" />, level: "Avancé" },
-        { name: "JavaScript", icon: <DiJavascript1 className="w-10 h-10 text-yellow-400" />, level: "Avancé" },
         { name: "React.js", icon: <FaReact className="w-10 h-10 text-sky-400" />, level: "Intermédiaire" },
         { name: "Bootstrap", icon: <FaBootstrap className="w-10 h-10 text-purple-500" />, level: "Avancé" },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-10 h-10 text-cyan-500" />, level: "Intermédiaire" },
       ],
       backend: [
         { name: "Laravel", icon: <FaLaravel className="w-10 h-10 text-red-500" />, level: "Avancé" },
@@ -396,6 +407,8 @@ const AdvancedFullStackSpecialization = () => {
         { name: "C#", icon: <SiCsharp className="w-10 h-10 text-purple-600" />, level: "Intermédiaire" },
         { name: "C++", icon: <SiCplusplus className="w-10 h-10 text-blue-500" />, level: "Intermédiaire" },
         { name: "PHP", icon: <FaPhp className="w-10 h-10 text-indigo-400" />, level: "Avancé" },
+        { name: "JavaScript", icon: <FaJs className="w-10 h-10 text-yellow-400" />, level: "Avancé" },
+        { name: "TypeScript", icon: <SiTypescript className="w-10 h-10 text-blue-600" />, level: "Intermédiaire" },
         { name: "Python", icon: <FaPython className="w-10 h-10 text-yellow-500" />, level: "Avancé" },
         { name: "Bash Scripting", icon: <SiGnubash className="w-10 h-10 text-green-600" />, level: "Intermédiaire" },
       ],
