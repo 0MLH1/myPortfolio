@@ -9,8 +9,8 @@
     import { Label } from '@/components/ui/label';
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
-    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase,FaJs  } from 'react-icons/fa';
-    import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiJavascript} from 'react-icons/si';
+    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase, FaJs, FaVuejs,  } from 'react-icons/fa';
+    import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
 
 
@@ -386,8 +386,11 @@ const AdvancedFullStackSpecialization = () => {
         { name: "HTML5", icon: <DiHtml5 className="w-10 h-10 text-orange-500" />, level: "Avancé" },
         { name: "CSS3", icon: <DiCss3 className="w-10 h-10 text-blue-500" />, level: "Avancé" },
         { name: "React.js", icon: <FaReact className="w-10 h-10 text-sky-400" />, level: "Intermédiaire" },
-        { name: "Bootstrap", icon: <FaBootstrap className="w-10 h-10 text-purple-500" />, level: "Avancé" },
+        { name: "Vue.js", icon: <FaVuejs className="w-10 h-10 text-green-500" />, level: "Intermédiaire" },
+        { name: "Vite", icon: <SiVite className="w-10 h-10 text-purple-400" />, level: "Intermédiaire" },
         { name: "Tailwind CSS", icon: <SiTailwindcss className="w-10 h-10 text-cyan-500" />, level: "Intermédiaire" },
+        { name: "Bootstrap", icon: <FaBootstrap className="w-10 h-10 text-purple-500" />, level: "Avancé" },
+        
       ],
       backend: [
         { name: "Laravel", icon: <FaLaravel className="w-10 h-10 text-red-500" />, level: "Avancé" },
