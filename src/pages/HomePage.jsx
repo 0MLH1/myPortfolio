@@ -9,8 +9,8 @@
     import { Label } from '@/components/ui/label';
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
-    import { FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase, FaJs, FaVuejs,  } from 'react-icons/fa';
-    import { SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
+    import { FaTools, FaGitAlt, FaGithub, FaGitlab, FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase, FaJs, FaVuejs,  } from 'react-icons/fa';
+    import { SiPostman, SiVisualstudiocode, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
 
 
@@ -278,7 +278,7 @@ const AdvancedFullStackSpecialization = () => {
         description: "Développement de fonctionnalités backend en laravel pour les clients d'InnovQube",
         stack: ["Laravel, Livewire, Filament"],
         features: ["Réservation en ligne de vols, hôtels et circuits","Gestion des forfaits et offres promotionnelles","Paiement sécurisé intégré","Espace client personnalisé avec historique des réservations","Calendrier des disponibilités en temps réel"],
-        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <SiMysql key="mysql" className="text-blue-500"/>, ],
+        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <SiMysql key="mysql" className="text-blue-500"/>, <FaGitlab key="gitlab" className="text-orange-600" />,  ],
       },
       {
         logo: "https://media.licdn.com/dms/image/v2/D4E3DAQEcImVStm3dMg/image-scale_191_1128/image-scale_191_1128/0/1725555837550/skoolution_cover?e=2147483647&v=beta&t=_Rz1IOPo9baZOWf-G5Ux9TDTeR3i2AjqQJIcNjG4_BA",
@@ -290,7 +290,7 @@ const AdvancedFullStackSpecialization = () => {
         description: "Développement de fonctionnalités full-stack pour les outils internes de Skoolution",
         stack: ["React.js", "Node.js", "MongoDB","Express.js","TypeScript", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
         features: ["Composants UI réactifs avec TailwindCSS", "Intégration d’API tierces", "Participation aux revues de code et flux Git"],
-        icons: [<SiTypescript key="typescript" className="text-blue-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaNodeJs key="node" className="text-green-600"/>, <SiMongodb key="mongo" className="text-green-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>],
+        icons: [<SiTypescript key="typescript" className="text-blue-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaNodeJs key="node" className="text-green-600"/>, <SiMongodb key="mongo" className="text-green-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <FaGithub key="github" className="text-black-500" />, ],
       },
       {
         logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x_ypAajpUWnr2nQW7hlZa_MfF8pMCg7vRA&s",
@@ -404,6 +404,13 @@ const AdvancedFullStackSpecialization = () => {
         { name: "MariaDB", icon: <SiMariadb className="w-10 h-10 text-orange-600" />, level: "Intermédiaire" },
         { name: "SQL Server", icon: <FaDatabase className="w-10 h-10 text-purple-700" />, level: "Intermédiaire" },
       ],
+      tools: [
+        { name: "Git", icon: <FaGitAlt className="w-10 h-10 text-red-500" />, level: "Avancé" },
+        { name: "GitHub", icon: <FaGithub className="w-10 h-10 text-black" />, level: "Avancé" },
+        { name: "GitLab", icon: <FaGitlab className="w-10 h-10 text-orange-600" />, level: "Intermédiaire" },
+        { name: "VS Code", icon: <SiVisualstudiocode className="w-10 h-10 text-blue-500" />, level: "Avancé" },
+        { name: "Postman", icon: <SiPostman className="w-10 h-10 text-orange-500" />, level: "Avancé" },
+      ],
       languages: [
         { name: "Java", icon: <FaJava className="w-10 h-10 text-red-600" />, level: "Avancé" },
         { name: "C", icon: <SiC className="w-10 h-10 text-blue-700" />, level: "Intermédiaire" },
@@ -419,7 +426,6 @@ const AdvancedFullStackSpecialization = () => {
         { name: "Autonome", icon: <Star className="w-6 h-6 text-yellow-400" /> },
         { name: "Enthousiaste", icon: <UsersThree className="w-6 h-6 text-green-400" /> },
         { name: "Apprend rapidement", icon: <Brain className="w-6 h-6 text-purple-400" /> },
-        { name: "Passionné par le développement web", icon: <CodeIcon className="w-6 h-6 text-sky-400" /> },
       ],
       spokenLanguages: [
         { name: "Arabe", level: "Natif", icon: <LanguagesIcon className="w-6 h-6 text-teal-400" /> },
@@ -484,7 +490,8 @@ const AdvancedFullStackSpecialization = () => {
         <SkillCategory title="Frontend" skillsList={skills.frontend} icon={<Laptop />} indexOffset={0}/>
         <SkillCategory title="Backend" skillsList={skills.backend} icon={<Server />} indexOffset={skills.frontend.length} />
         <SkillCategory title="Bases de Données" skillsList={skills.databases} icon={<DatabaseZap />} indexOffset={skills.frontend.length + skills.backend.length} />
-        <SkillCategory title="Langages de Programmation" skillsList={skills.languages} icon={<CodeIcon />} indexOffset={skills.frontend.length + skills.backend.length + skills.databases.length}/>
+        <SkillCategory title="Outils" skillsList={skills.tools} icon={<FaTools />} indexOffset={skills.frontend.length + skills.backend.length + skills.databases.length} />
+        <SkillCategory title="Langages de Programmation" skillsList={skills.languages} icon={<CodeIcon />} indexOffset={skills.frontend.length + skills.backend.length + skills.databases.length + skills.tools.length}/>
         
         <div className="grid md:grid-cols-2 gap-10 mt-10">
           <SkillCategory title="Soft Skills" skillsList={skills.softSkills} icon={<Brain />} />
