@@ -9,8 +9,8 @@
     import { Label } from '@/components/ui/label';
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
-    import { FaTools, FaGitAlt, FaGithub, FaGitlab, FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase, FaJs, FaVuejs,  } from 'react-icons/fa';
-    import { SiPostman, SiVisualstudiocode, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
+    import {  FaProjectDiagram, FaTools, FaGitAlt, FaGithub, FaGitlab, FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase, FaJs, FaVuejs,  } from 'react-icons/fa';
+    import { SiJira, SiTrello, SiScrumalliance, SiOpenproject , SiPostman, SiVisualstudiocode, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
 
 
@@ -422,6 +422,13 @@ const AdvancedFullStackSpecialization = () => {
         { name: "Python", icon: <FaPython className="w-10 h-10 text-yellow-500" />, level: "Avancé" },
         { name: "Bash Scripting", icon: <SiGnubash className="w-10 h-10 text-green-600" />, level: "Intermédiaire" },
       ],
+      projectManagement: [
+        { name: "Scrum", icon: <SiScrumalliance className="w-10 h-10 text-orange-500" /> },
+        { name: "Jira", icon: <SiJira className="w-10 h-10 text-blue-600" /> },
+        { name: "Trello", icon: <SiTrello className="w-10 h-10 text-sky-500" /> },
+        { name: "Kanban", icon: <FaProjectDiagram className="w-10 h-10 text-green-600" /> },
+        { name: "OpenProject", icon: <SiOpenproject className="w-10 h-10 text-blue-700" /> },
+      ],
       softSkills: [
         { name: "Autonome", icon: <Star className="w-6 h-6 text-yellow-400" /> },
         { name: "Enthousiaste", icon: <UsersThree className="w-6 h-6 text-green-400" /> },
@@ -492,7 +499,8 @@ const AdvancedFullStackSpecialization = () => {
         <SkillCategory title="Bases de Données" skillsList={skills.databases} icon={<DatabaseZap />} indexOffset={skills.frontend.length + skills.backend.length} />
         <SkillCategory title="Outils" skillsList={skills.tools} icon={<FaTools />} indexOffset={skills.frontend.length + skills.backend.length + skills.databases.length} />
         <SkillCategory title="Langages de Programmation" skillsList={skills.languages} icon={<CodeIcon />} indexOffset={skills.frontend.length + skills.backend.length + skills.databases.length + skills.tools.length}/>
-        
+        <SkillCategory title="Gestion de Projet" skillsList={skills.projectManagement} icon={<FaProjectDiagram />} indexOffset={skills.frontend.length + skills.backend.length + skills.databases.length + skills.tools.length + skills.languages.length} />
+
         <div className="grid md:grid-cols-2 gap-10 mt-10">
           <SkillCategory title="Soft Skills" skillsList={skills.softSkills} icon={<Brain />} />
           <SkillCategory title="Langues Parlées" skillsList={skills.spokenLanguages} icon={<LanguagesIcon />} />
