@@ -215,7 +215,7 @@ const AdvancedFullStackSpecialization = () => {
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                   <Button size="lg" asChild className="group">
                     <motion.a 
-                      href="/mohamed_lahmam_cv.pdf" 
+                      href="/MohamedLahmamResume.pdf" 
                       download 
                       whileHover={{ scale: 1.05 }} 
                       whileTap={{ scale: 0.95 }}
