@@ -16,7 +16,7 @@
 
 
     const AnimatedTextLoop = () => {
-      const texts = ["Full-Stack Developer", "Laravel Master", "React.js Builder", "Future Engineer"];
+      const texts = ["Full-Stack Developer", "Laravel Master", "React/vue.js Builder", "PHP Engineer"];
       const [index, setIndex] = useState(0);
 
       useEffect(() => {
@@ -198,7 +198,7 @@ const AdvancedFullStackSpecialization = () => {
                   <span className="block">Mohamed</span>
                   <span className="block text-primary">Lahmam</span>
                 </h1>
-                <p className="text-xl sm:text-2xl text-muted-foreground mb-2">Software Engineering Student</p>
+                <p className="text-xl sm:text-2xl text-muted-foreground mb-2">Software Engineer</p>
                 <AnimatedTextLoop />
                 <p className="text-lg text-muted-foreground mt-4 mb-6 italic">"Autonome, passionné, prêt à relever de nouveaux défis !"</p>
                 <div className="space-y-2 mb-8 text-sm">
@@ -295,7 +295,7 @@ const AdvancedFullStackSpecialization = () => {
       {
         logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x_ypAajpUWnr2nQW7hlZa_MfF8pMCg7vRA&s",
         title: "Golden Success",
-        role: "Full-Stack Developer (Freelance)",
+        role: "Full-Stack Developer (Laravel)",
         date: "06/2024 - 07/2024",
         location: "El Jaddida, Maroc",
         type: "à distance",
