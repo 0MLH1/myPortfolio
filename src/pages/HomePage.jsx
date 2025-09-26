@@ -10,7 +10,7 @@
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
     import {  FaProjectDiagram, FaTools, FaGitAlt, FaGithub, FaGitlab, FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase, FaJs, FaVuejs,  } from 'react-icons/fa';
-    import { SiJira, SiTrello, SiScrumalliance, SiOpenproject , SiPostman, SiVisualstudiocode, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
+    import { SiDocker, SiJira, SiTrello, SiScrumalliance, SiOpenproject , SiPostman, SiVisualstudiocode, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
 
 
@@ -408,6 +408,7 @@ const AdvancedFullStackSpecialization = () => {
         { name: "Git", icon: <FaGitAlt className="w-10 h-10 text-red-500" />, level: "Avancé" },
         { name: "GitHub", icon: <FaGithub className="w-10 h-10 text-black" />, level: "Avancé" },
         { name: "GitLab", icon: <FaGitlab className="w-10 h-10 text-orange-600" />, level: "Intermédiaire" },
+        { name: "Docker", icon: <SiDocker className="w-10 h-10 text-blue-400" />, level: "Intermédiaire" },
         { name: "VS Code", icon: <SiVisualstudiocode className="w-10 h-10 text-blue-500" />, level: "Avancé" },
         { name: "Postman", icon: <SiPostman className="w-10 h-10 text-orange-500" />, level: "Avancé" },
       ],
