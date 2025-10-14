@@ -9,14 +9,14 @@
     import { Label } from '@/components/ui/label';
     import { useToast } from '@/components/ui/use-toast';
     import { Mail, Phone, MapPin, Download, Send, ChevronRight, Briefcase, Users, Database, FileText, Star, MessageCircle, PenTool, Users2 as UsersThree, Code as CodeIcon, Server, DatabaseZap, Laptop, Brain, Languages as LanguagesIcon, School, CalendarDays, Linkedin, Github, FileSpreadsheet } from 'lucide-react';
-    import {  FaProjectDiagram, FaTools, FaGitAlt, FaGithub, FaGitlab, FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase, FaJs, FaVuejs,  } from 'react-icons/fa';
-    import { SiDocker, SiJira, SiTrello, SiScrumalliance, SiOpenproject , SiPostman, SiVisualstudiocode, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
+    import { FaAngular, FaProjectDiagram, FaTools, FaGitAlt, FaGithub, FaGitlab, FaLaravel, FaReact, FaBootstrap, FaNodeJs, FaJava, FaPython, FaPhp, FaDatabase, FaJs, FaVuejs,  } from 'react-icons/fa';
+    import { SiSymfony, SiPhp, SiDocker, SiJira, SiTrello, SiScrumalliance, SiOpenproject , SiPostman, SiVisualstudiocode, SiCplusplus, SiGnubash, SiMongodb, SiMariadb, SiMysql, SiOracle, SiC, SiCsharp, SiRedux, SiTypescript, SiTailwindcss, SiVite} from 'react-icons/si';
     import { DiHtml5, DiCss3, DiJavascript1 } from 'react-icons/di';
 
 
 
     const AnimatedTextLoop = () => {
-      const texts = ["Full-Stack Developer", "Laravel Master", "React/vue.js Builder", "PHP Engineer"];
+      const texts = ["Full-Stack Developer", "Symfony/Laravel Master", "React/Angular.js Builder", "PHP Engineer"];
       const [index, setIndex] = useState(0);
 
       useEffect(() => {
@@ -92,20 +92,11 @@ const LaptopSVG = (props) => (
 );
 
 const containerVariants = {
-  hidden: { opacity: 0, scale: 0.95, y: 20 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-const iconHoverEffect = {
-  scale: 1.3,
-  rotate: 20,
-  transition: { type: "spring", stiffness: 250, damping: 15 },
-};
+const iconHoverEffect = { scale: 1.1, transition: { duration: 0.3 } };
 
 const AdvancedFullStackSpecialization = () => {
   return (
@@ -126,7 +117,7 @@ const AdvancedFullStackSpecialization = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        Spécialisation Laravel / React
+        Spécialisation PHP / Symfony / Laravel 
       </motion.h2>
 
       {/* Description */}
@@ -136,47 +127,55 @@ const AdvancedFullStackSpecialization = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 1 }}
       >
-        Maîtrise complète du développement Full-Stack avec{" "}
-        <span className="font-semibold text-red-500">Laravel</span>,{" "}
-        <span className="font-semibold text-blue-400">PHP</span> et{" "}
-        <span className="font-semibold text-cyan-400">React</span>. Performance, qualité
-        et architecture moderne.
+        Expertise avancée en développement Back-End avec{" "}
+        <span className="font-semibold text-blue-400">PHP</span>,{" "}
+        <span className="font-semibold text-red-500">Laravel</span> et{" "}
+        <span className="font-semibold text-gray-200">Symfony</span>. <br />
+        Intégration fluide avec des technologies Front-End modernes telles que{" "}
+        <span className="text-cyan-400 font-semibold">React</span> et{" "}
+        <span className="text-red-400 font-semibold">Angular</span>.
       </motion.p>
 
-      {/* Icons row */}
+      {/* Main icons (PHP, Laravel, Symfony) */}
       <motion.div
-        className="flex justify-center gap-16"
+        className="flex justify-center items-center gap-14 mb-12"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
       >
-        <motion.div
-          whileHover={iconHoverEffect}
-          className="cursor-pointer select-none"
-          title="Laravel"
-        >
+        <motion.div whileHover={iconHoverEffect} className="cursor-pointer" title="PHP">
+          <SiPhp className="text-8xl text-blue-500 drop-shadow-lg" />
+        </motion.div>
+
+        <motion.div whileHover={iconHoverEffect} className="cursor-pointer" title="Laravel">
           <FaLaravel className="text-8xl text-red-600 drop-shadow-lg" />
         </motion.div>
 
-
-        <motion.div
-          whileHover={iconHoverEffect}
-          className="cursor-pointer select-none"
-          title="React"
-        >
-          <FaReact className="text-8xl text-cyan-400 drop-shadow-lg" />
+        <motion.div whileHover={iconHoverEffect} className="cursor-pointer" title="Symfony">
+          <SiSymfony className="text-8xl text-gray-200 drop-shadow-lg" />
         </motion.div>
       </motion.div>
 
-      {/* Animated underline */}
+      {/* Secondary icons (React, Angular) - perfectly centered at bottom */}
       <motion.div
-        className="h-1 bg-gradient-to-r from-red-500 via-pink-500 to-purple-600 rounded-full mt-12 mx-auto w-0"
-        animate={{ width: "70%" }}
-        transition={{ duration: 1.6, ease: "easeInOut" }}
-      />
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-10 justify-center items-center"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.9, duration: 0.8 }}
+      >
+        <motion.div whileHover={iconHoverEffect} className="cursor-pointer" title="React">
+          <FaReact className="text-5xl text-cyan-400 drop-shadow-md" />
+        </motion.div>
+
+        <motion.div whileHover={iconHoverEffect} className="cursor-pointer" title="Angular">
+          <FaAngular className="text-5xl text-red-500 drop-shadow-md" />
+        </motion.div>
+      </motion.div>
+
     </motion.div>
   );
 };
+
 
 
     const HeroSection = () => {
@@ -215,7 +214,7 @@ const AdvancedFullStackSpecialization = () => {
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                   <Button size="lg" asChild className="group">
                     <motion.a 
-                      href="/MohamedLahmamResume.pdf" 
+                      href="/M.LAHMAM-Resume-PFE.pdf" 
                       download 
                       whileHover={{ scale: 1.05 }} 
                       whileTap={{ scale: 0.95 }}
@@ -271,31 +270,31 @@ const AdvancedFullStackSpecialization = () => {
       {
         logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFOePLb6guZaQ/company-logo_200_200/company-logo_200_200/0/1712274871925/innovqube_logo?e=2147483647&v=beta&t=LT9HckKmThf3NON5B9EypK6u0PH1sn_UySBRgR7-GVE",
         title: "InnovQube",
-        role: "Backend Engineer Intern (Laravel)",
+        role: "Full Stack PHP/Laravel Engineer (Stage PFA)",
         date: "07/2025 - 09/2025",
         location: "Paris, France",
         type: "à distance",
-        description: "Développement de fonctionnalités backend en laravel pour les clients d'InnovQube",
+        description: "Contribution au développement d'une plateforme Saas de réservation au sein d'une équipe Agile (Scrum)",
         stack: ["Laravel, Livewire, Filament"],
-        features: ["Réservation en ligne de vols, hôtels et circuits","Gestion des forfaits et offres promotionnelles","Paiement sécurisé intégré","Espace client personnalisé avec historique des réservations","Calendrier des disponibilités en temps réel"],
+        features: ["Développement de fonctionnalités backend avec Laravel/Eloquent","Automatisation de notifications (Email, SMS, WhatsApp)","Paiement sécurisé intégré","Mise en place de logique événementielle avec Observers, Events et Redis Queues","Gestion de pipelines CI/CD (GitLab) et rédaction de tests PHPUnit"],
         icons: [<FaLaravel key="laravel" className="text-red-500"/>, <SiMysql key="mysql" className="text-blue-500"/>, <FaGitlab key="gitlab" className="text-orange-600" />,  ],
       },
       {
         logo: "https://media.licdn.com/dms/image/v2/D4E3DAQEcImVStm3dMg/image-scale_191_1128/image-scale_191_1128/0/1725555837550/skoolution_cover?e=2147483647&v=beta&t=_Rz1IOPo9baZOWf-G5Ux9TDTeR3i2AjqQJIcNjG4_BA",
         title: "Skoolution",
-        role: "Full-Stack Engineer Intern (MERN Stack)",
+        role: "MERN Stack Developer (Stage)",
         date: "04/2025 - 07/2025",
         location: "Agadir, Maroc",
         type: "hybride",
         description: "Développement de fonctionnalités full-stack pour les outils internes de Skoolution",
         stack: ["React.js", "Node.js", "MongoDB","Express.js","TypeScript", "TailwindCSS", "Bootstrap", "HTML/CSS/JS"],
-        features: ["Composants UI réactifs avec TailwindCSS", "Intégration d’API tierces", "Participation aux revues de code et flux Git"],
+        features: ["Composants UI réactifs avec TailwindCSS", "Fonctionnalités backend avec Node.js et MongoDB", "Participation aux revues de code et flux Git"],
         icons: [<SiTypescript key="typescript" className="text-blue-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaNodeJs key="node" className="text-green-600"/>, <SiMongodb key="mongo" className="text-green-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <FaGithub key="github" className="text-black-500" />, ],
       },
       {
         logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x_ypAajpUWnr2nQW7hlZa_MfF8pMCg7vRA&s",
         title: "Golden Success",
-        role: "Full-Stack Developer (Laravel)",
+        role: "Full-Stack Laravel Developer (Indépendant)",
         date: "06/2024 - 07/2024",
         location: "El Jaddida, Maroc",
         type: "à distance",
@@ -386,14 +385,15 @@ const AdvancedFullStackSpecialization = () => {
         { name: "HTML5", icon: <DiHtml5 className="w-10 h-10 text-orange-500" />, level: "Avancé" },
         { name: "CSS3", icon: <DiCss3 className="w-10 h-10 text-blue-500" />, level: "Avancé" },
         { name: "React.js", icon: <FaReact className="w-10 h-10 text-sky-400" />, level: "Intermédiaire" },
+        { name: "Angular", icon: <FaAngular className="w-10 h-10 text-red-600" />, level: "Intermédiaire" },
         { name: "Vue.js", icon: <FaVuejs className="w-10 h-10 text-green-500" />, level: "Intermédiaire" },
-        { name: "Vite", icon: <SiVite className="w-10 h-10 text-purple-400" />, level: "Intermédiaire" },
         { name: "Tailwind CSS", icon: <SiTailwindcss className="w-10 h-10 text-cyan-500" />, level: "Intermédiaire" },
         { name: "Bootstrap", icon: <FaBootstrap className="w-10 h-10 text-purple-500" />, level: "Avancé" },
         
       ],
       backend: [
         { name: "Laravel", icon: <FaLaravel className="w-10 h-10 text-red-500" />, level: "Avancé" },
+        { name: "Symfony", icon: <SiSymfony className="w-10 h-10 text-gray-700" />, level: "Intermédiaire" },
         { name: "Node.js , Express", icon: <FaNodeJs className="w-10 h-10 text-green-500" />, level: "Intermédiaire" },
         { name: "JEE / Java EE", icon: <FaJava className="w-10 h-10 text-red-600" />, level: "Basique" },
       ],
