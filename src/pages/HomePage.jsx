@@ -268,6 +268,23 @@ const AdvancedFullStackSpecialization = () => {
     
     const projects = [
       {
+        logo: "https://www.sofrecom.com/media/layout/img/logo-2024.png",
+        title: "Sofrecom Maroc",
+        role: "Full Stack PHP/Symfony Engineer",
+        date: "02/2026 - ..",
+        location: "Casablanca, Maroc",
+        type: "Présentiel",
+        description: "Amélioration de la qualité, performance et accessibilité du portail de l'information Orange, en environnement Agile (Scrum)",
+        stack: ["Symfony"],
+        features: [
+          "Mise en place des standards d’accessibilité sur les IHM (navigation clavier, rôles ARIA, attributs sémantiques, focus management)",
+          "Audit et correction des composants UI pour conformité WCAG et amélioration de l’expérience utilisateur",
+          "Conception et exécution de tests de charge et stress sur les endpoints API (JMeter)",
+          "Optimisation des performances backend : cache applicatif, amélioration de la sérialisation et réduction des requêtes N+1",
+          "Implémentation de stratégies de pagination et amélioration des temps de réponse en production"],
+        icons: [<SiSymfony className="text-gray-700" />, <SiMysql key="mysql" className="text-blue-500"/>, <FaGitlab key="gitlab" className="text-orange-600" />, <SiDocker className="text-blue-400" />],
+      },
+      {
         logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFOePLb6guZaQ/company-logo_200_200/company-logo_200_200/0/1712274871925/innovqube_logo?e=2147483647&v=beta&t=LT9HckKmThf3NON5B9EypK6u0PH1sn_UySBRgR7-GVE",
         title: "InnovQube",
         role: "Full Stack PHP/Laravel Engineer (Stage PFA)",
