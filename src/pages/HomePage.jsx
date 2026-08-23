@@ -212,6 +212,8 @@ const AdvancedFullStackSpecialization = () => {
                   </motion.div>
                 </div>
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+
+                  {/*                  
                   <Button size="lg" asChild className="group">
                     <motion.a 
                       href="/M.LAHMAM-Resume-PFE.pdf" 
@@ -223,6 +225,7 @@ const AdvancedFullStackSpecialization = () => {
                       Télécharger CV <Download className="h-5 w-5 ml-2 group-hover:animate-bounce" />
                     </motion.a>
                   </Button>
+                  */}
                   <Button size="lg" variant="outline" asChild className="group">
                     <motion.a 
                       href="#contact" 
@@ -268,10 +271,22 @@ const AdvancedFullStackSpecialization = () => {
     
     const projects = [
       {
+        logo: "https://www.manaosconsulting.com/logo%20manaos.svg",
+        title: "Manaos Consulting",
+        role: "Full Stack Laravel/Vue.js Engineer (CDI)",
+        date: "08/2026 - Présent",
+        location: "Casablanca, Maroc",
+        type: "Présentiel",
+        description: "Contribuer à la conception et au développement d'un portail pour le Client Orange CyberDefence",
+        stack: ["Larvel", "Vue.js", "MySQL"],
+        features: [],
+        icons: [<FaLaravel key="laravel" className="text-red-500"/>, <FaVuejs key="vuejs" className="text-green-500" />, <SiTypescript key="typescript" className="text-blue-500" />, <SiMysql key="mysql" className="text-blue-500"/>, <FaGitlab key="gitlab" className="text-orange-600" />,  ],
+      },
+      {
         logo: "https://www.sofrecom.com/media/layout/img/logo-2024.png",
         title: "Sofrecom Maroc",
-        role: "Full Stack PHP/Symfony Engineer",
-        date: "02/2026 - ..",
+        role: "Full Stack PHP/Symfony Engineer (Stage)",
+        date: "02/2026 - 08/2026",
         location: "Casablanca, Maroc",
         type: "Présentiel",
         description: "Amélioration de la qualité, performance et accessibilité du portail de l'information Orange, en environnement Agile (Scrum)",
@@ -287,7 +302,7 @@ const AdvancedFullStackSpecialization = () => {
       {
         logo: "https://media.licdn.com/dms/image/v2/D4E0BAQFOePLb6guZaQ/company-logo_200_200/company-logo_200_200/0/1712274871925/innovqube_logo?e=2147483647&v=beta&t=LT9HckKmThf3NON5B9EypK6u0PH1sn_UySBRgR7-GVE",
         title: "InnovQube",
-        role: "Full Stack PHP/Laravel Engineer (Stage PFA)",
+        role: "Full Stack PHP/Laravel Engineer (Stage)",
         date: "07/2025 - 09/2025",
         location: "Paris, France",
         type: "à distance",
@@ -309,10 +324,10 @@ const AdvancedFullStackSpecialization = () => {
         icons: [<SiTypescript key="typescript" className="text-blue-500"/>, <FaReact key="react" className="text-blue-400"/>, <FaNodeJs key="node" className="text-green-600"/>, <SiMongodb key="mongo" className="text-green-500"/>, <FaBootstrap key="bootstrap" className="text-purple-500"/>, <FaGithub key="github" className="text-black-500" />, ],
       },
       {
-        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x_ypAajpUWnr2nQW7hlZa_MfF8pMCg7vRA&s",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhqM9a_bMtAC-u2F1WR_1r7C6IeTmhiKJ5NTJBuImMZ3aUTczSvik6m_cj&s=10",
         title: "Golden Success",
         role: "Full-Stack Laravel Developer (Indépendant)",
-        date: "06/2024 - 07/2024",
+        date: "06/2024 - 12/2024",
         location: "El Jaddida, Maroc",
         type: "à distance",
         description: "Application web dynamique pour la gestion de cours avec tableau de bord administrateur...",
@@ -528,7 +543,7 @@ const AdvancedFullStackSpecialization = () => {
 
     const educationHistory = [
       {
-        date: "2023 – Aujourd'hui",
+        date: "2023 – 2026",
         title: "Cycle d’Ingénieur – FST Marrakech",
         description: "Fillières : Ingénierie des Réseaux et Systèmes Informatiques (IRSI) -> Acquisition de compétences avancées en développement web, architecture réseau, et développement système.",
         icon: (
